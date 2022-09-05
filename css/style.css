@@ -1,0 +1,523 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+body{
+	background: rgb(17, 17, 17);
+	
+}
+/*Header...........................................................*/
+header{
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 13px 16%;
+	border-bottom: 1px solid transparent;
+	transition: all .40s ease;
+	background-color:black;
+}
+.logo{
+	width: 135px;
+	height: auto;
+	color: rgb(0, 205, 174);
+	font-size: 17px;
+}
+.navbar{
+	display: flex;
+}
+.navbar a{
+	color: rgb(0, 205, 174);
+	font-size: 1.1rem;
+	font-weight: 600;
+	padding: 10px 25px;
+	margin: 0 2px;
+	border-radius: 0.5rem;
+	transition: all .40s ease;
+}
+.navbar a:hover{
+	background: rgb(0, 205, 174);
+	color:white;
+}
+#menu-icon{
+	font-size: 36px;
+	color: white;
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+section{
+	padding: 160px 16% 90px;
+}
+/*Home.................................................................*/
+.home{
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	background: url(image/Qosay.png) no-repeat;
+	background-size: contain;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.home-text h1{
+	margin: 20px 0;
+	font-size: 5.2rem;
+	font-weight: bold;
+	line-height: 1.1;
+	letter-spacing: 2px;
+	color: white;
+}
+span{
+	color: rgb(0, 205, 174);
+}
+.home-text h4{
+	color: rgb(0, 205, 174);
+	font-size: 35px;
+	font-weight: 600;
+}
+.home-text h3{
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 3rem;
+	color: white;
+}
+.btn{
+	display: inline-block;
+	padding: 14px 40px;
+	border-radius: 0.5rem;
+	font-size: 17px;
+	font-weight: 500;
+	background: rgb(0, 205, 174);
+	color: white;
+	border: 1px solid rgb(0, 205, 174);
+	transition: all .40s ease;
+}
+.btn:hover{
+	transform: scale(1.01) translateY(-5px);
+	background: transparent;
+	border: 1px solid rgb(0, 205, 174);
+}
+/*About............................................................*/
+.About{
+    background-color: rgb(237, 242, 248);
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 3.0em;
+    margin-bottom: 80px;
+}
+.pio{
+    font-size: 35px;
+    color: black;
+}
+.imge{
+    
+    width: 280px;
+    position: relative;
+    left:38%;
+    bottom:1px;
+}
+.Advice{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    border: 2px solid ;
+    background-color:  black;
+}
+/*Skills..........................................................*/
+.Skills{
+    background-color:rgb(17, 17, 17);  
+}
+.Skill{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 205, 174);
+    font-size: 3.0em;
+    margin-bottom: 80px;
+}
+.Icon_Skills{
+    display: flex;
+    margin: auto;
+    position: relative;
+    flex-direction: column;
+    padding: 1.6rem 1.5rem;
+    max-width: 40rem;
+    border-radius: 0.7rem;
+    box-shadow: 0.3rem 0.3rem 1.2rem;
+    
+}
+.Icon_Skills .my-progress{
+    height: 10px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    transform: scale(0);
+    border-radius: 0.7rem;
+    box-shadow: inset 0 1px 1px black,0 1px white;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    padding-top: 0.9px;
+}
+@keyframes animate{
+    100%{transform: scale(1);}
+}
+.my-progress span{
+    height: 100%;
+    position: absolute;
+    border-radius: 0.7rem;
+    transform: scale(0);
+    transform-origin: left;
+    background-color: rgb(0, 205, 174);
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.my-progress .C {
+    width: 80%;
+}
+.my-progress .Java{
+    width: 60%;
+}
+.my-progress .HTML{
+    width: 80%;
+}
+.my-progress .CSS{
+    width: 60%;
+}
+.my-progress .Git{
+    width: 70%;
+}
+.my-progress .Github{
+    width: 70%;
+}
+.my-progress span ::after{
+    width: 80%;
+    content: 80%;
+    color: aqua;
+}
+.percentc{
+    color: rgb(0, 205, 174);
+    margin-left: 300px;
+}
+.percenth{
+    color: rgb(0, 205, 174);
+    margin-left: 300px;
+}
+.percentj{
+    color: rgb(0, 205, 174);
+    margin-left: 200px;
+}
+.percentcss{
+    color: rgb(0, 205, 174);
+    margin-left: 200px;
+}
+.percentgh{
+    color: rgb(0, 205, 174);
+    margin-left: 250px;
+}
+
+label{
+    color: white;
+    display: inline-block;
+    margin-right: 80px;
+    margin-top: 100px;   
+}
+/*Project............................................................*/
+.Project{
+    background-color: rgb(237, 242, 248); 
+}
+.Project h2{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 3.0em;
+    margin-bottom: 80px;
+}
+.proje{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 2.0em;
+}
+/*Contact...........................................................*/
+.contact{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 3rem;
+}
+.contact-text h4{
+	margin: 15px 0;
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+}
+.contact-text h2{
+	font-size: 3.5rem;
+	margin-bottom: 120px;
+	color: rgb(0, 205, 174);
+}
+.contact-list{
+	margin-bottom: 3rem;
+}
+.contact-list li{
+	margin-bottom: 10px;
+	display: block;
+}
+.contact-list li a{
+	display: block;
+	color: rgb(0, 205, 174);
+	font-size: 1.1rem;
+	font-weight: 600;
+	transition: all .40s ease;
+}
+.contact-list li a:hover{
+	transform: scale(1.01) translateY(-5px);
+	color:rgb(0, 205, 174);
+}
+.contact-icons i{
+	height: 40px;
+	width: 40px;
+	background: rgb(0, 205, 174);
+	border-radius: 0.5rem;
+	color: black;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	margin-right: 10px;
+	transition: all .40s ease;
+}
+.contact-icons i:hover{
+	transform: scale(1.01) translateY(-5px);
+	background: rgb(0, 205, 174);
+}
+.contact-form{
+	margin-top: 20px;
+}
+.contact-form form{
+	position: relative;
+}
+.contact-form form input,
+form textarea{
+	border: none;
+	outline: none;
+	width: 100%;
+	padding: 18px;
+	background: #12141c;
+	color: rgb(0, 205, 174);
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	border-radius: 0.5rem;
+}
+.contact-form textarea{
+	resize: none;
+	height: 220px;
+}
+.contact-form form .send{
+	display: inline-block;
+	font-size: 17px;
+	font-weight: 500;
+	background: rgb(0, 205, 174);
+	color: white;
+	width: 190px;
+	transition: all .40s ease;
+	cursor: pointer;
+}
+/*Footer.........................................................*/
+.footer {
+    background-color:rgb(0, 0, 0);
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: rgb(0, 205, 174);
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+    color: white;
+}
+.top{
+	position: fixed;
+	bottom: 5.5rem;
+	right: 2.1rem;
+}
+.top i{
+	color:rgb(17, 17, 17) ;
+	background:rgb(0, 205, 174);
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 0.5rem;
+}
+/*Media............................................................*/
+@media (max-width: 1325px){
+	header{
+		padding: 16px 3%;
+	}
+	header.sticky{
+		padding: 8px 3%;
+	}
+	section{
+		padding: 130px 3% 60px;
+	}
+}
+@media (max-width: 1120px){
+	header{
+		padding: 16px 3%;
+	}
+	header.sticky{
+		padding: 8px 3%;
+	}
+	section{
+		padding: 130px 3% 60px;
+	}
+	.imge{
+		left:40%;
+		bottom:1px;
+	}
+}
+
+@media (max-width: 970px){
+	section{
+		padding: 70px 3% 60px;
+	}
+	.home{
+		height: 85vh;
+	}
+	.about{
+		grid-template-columns: 1fr;
+	}
+	.about-img{
+		text-align: center;
+	}
+	.contact{
+		grid-template-columns: 1fr;
+	}
+	.home-text h1{
+		font-size: 3rem;
+	}
+	.imge{
+		left:35%;
+		bottom:1px;
+	}
+}
+
+@media (max-width: 830px){
+	#menu-icon{
+		display: block;
+	}
+	.navbar{
+		position: absolute;
+		top: -600px;
+		right: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		background: black;
+		text-align: left;
+		transition: all .40s ease;
+	}
+	.navbar a{
+		display: block;
+		padding: 1rem;
+		margin: 1rem;
+	}
+	.navbar.active{
+		top: 100%;
+	}
+	.home-text h1{
+		font-size: 2rem;
+	}
+	.home-text h4{
+		color: rgb(0, 205, 174);
+		font-size: 35px;
+	}
+	.pio{
+		font-size: 25px;
+		color: black;
+	}
+	.imge{
+		left:25%;
+		bottom:1px;
+	}
+}
+@media (max-width: 450px){
+	.logo{
+		font-size: 15px;
+	}
+	#menu-icon{
+		display: block;
+	}
+	.home-text h1{
+		font-size: 1rem;
+	}
+	.home-text h4{
+		font-size: 25px;
+	}
+	.home-text h3{
+		font-size: 15px;
+	}
+	.home-text a{
+		font-size: 15px;
+	}
+	.pio{
+		color: black;
+		font-size: 15px;
+	}
+	.imge{
+		width: 100px;
+		left:35%;
+	}
+	.Advice{
+		font-size: 13px;
+	}
+	.footer-title {
+		font-size: 0.6em;
+	}
+	.footer .social-icons a{
+		font-size: 0.6em;
+	}
+	.percentc{
+		color: rgb(0, 205, 174);
+		margin-left: 200px;
+	}
+	.percenth{
+		color: rgb(0, 205, 174);
+		margin-left: 200px;
+	}
+	.percentj{
+		color: rgb(0, 205, 174);
+		margin-left: 150px;
+	}
+	.percentcss{
+		color: rgb(0, 205, 174);
+		margin-left: 150px;
+	}
+	.percentgh{
+		color: rgb(0, 205, 174);
+		margin-left: 180px;
+	}
+}
